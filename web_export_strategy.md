@@ -36,6 +36,7 @@ For projects developed using GDScript or native C++, the HTML5 export process is
 
 ### 4.1. Ensure Project Codebase Compliance
 
+*   **Rewrite Prerequisite:** If your project currently utilizes C# (.NET) for its game logic, it **must be rewritten** entirely into GDScript or native C++ (via GDExtension or Custom Modules) to utilize this web export strategy. This path specifically circumvents the limitations of C# (.NET) for web targets.
 *   **Verification:** Confirm that all game logic, custom nodes, and extensions are implemented exclusively in GDScript or C++. Any lingering C# components will not be executable in a non-Mono HTML5 export.
 *   **GDExtension/Custom Modules:** If using C++ via GDExtension or custom modules, ensure these are correctly compiled for the `web` platform. Godot's build system typically handles this during the export process if configured correctly.
 
